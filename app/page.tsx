@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { analytics } from '@/firebase/firebase';
 import { logEvent } from 'firebase/analytics';
 import Card from '@/components/Card';
+import Image from 'next/image';
 
 export default function Home() {
   const [lang, setLang] = useState('');
@@ -90,7 +91,7 @@ export default function Home() {
           </h1>
         </div>
         <div>
-          <img src="/assets/logo.png" alt="" />
+          <Image src="/assets/logo.png" alt="" />
         </div>
       </div>
       {/* heading end */}
@@ -108,7 +109,7 @@ export default function Home() {
         href="https://github.com/Aubrey-Tsorayi/translator-gdsc/tree/main"
         target="_blank"
       >
-        <img src="/assets/github.png" className="scale-75" alt="" />
+        <Image src="/assets/github.png" className="scale-75" alt="" />
       </a>
       {/* project end */}
 
